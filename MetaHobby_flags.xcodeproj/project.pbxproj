@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		138F978E1F5F1E2D00918A6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1393F49E1F5EF56A005A78ED /* Main.storyboard */; };
+		138F97901F5F228E00918A6B /* FlagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138F978F1F5F228E00918A6B /* FlagViewController.swift */; };
 		1393F49B1F5EF56A005A78ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1393F49A1F5EF56A005A78ED /* AppDelegate.swift */; };
-		1393F49D1F5EF56A005A78ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1393F49C1F5EF56A005A78ED /* ViewController.swift */; };
-		1393F4A01F5EF56A005A78ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1393F49E1F5EF56A005A78ED /* Main.storyboard */; };
 		1393F4A21F5EF56A005A78ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1393F4A11F5EF56A005A78ED /* Assets.xcassets */; };
 		1393F4A51F5EF56A005A78ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1393F4A31F5EF56A005A78ED /* LaunchScreen.storyboard */; };
 		1393F4B01F5EF56A005A78ED /* MetaHobby_flagsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1393F4AF1F5EF56A005A78ED /* MetaHobby_flagsTests.swift */; };
@@ -26,9 +26,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		138F978F1F5F228E00918A6B /* FlagViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlagViewController.swift; sourceTree = "<group>"; };
 		1393F4971F5EF56A005A78ED /* MetaHobby_flags.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetaHobby_flags.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1393F49A1F5EF56A005A78ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1393F49C1F5EF56A005A78ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1393F49F1F5EF56A005A78ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1393F4A11F5EF56A005A78ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1393F4A41F5EF56A005A78ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -78,8 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				1393F49A1F5EF56A005A78ED /* AppDelegate.swift */,
-				1393F49C1F5EF56A005A78ED /* ViewController.swift */,
 				1393F49E1F5EF56A005A78ED /* Main.storyboard */,
+				138F978F1F5F228E00918A6B /* FlagViewController.swift */,
 				1393F4A11F5EF56A005A78ED /* Assets.xcassets */,
 				1393F4A31F5EF56A005A78ED /* LaunchScreen.storyboard */,
 				1393F4A61F5EF56A005A78ED /* Info.plist */,
@@ -181,9 +181,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				138F978E1F5F1E2D00918A6B /* Main.storyboard in Resources */,
 				1393F4A51F5EF56A005A78ED /* LaunchScreen.storyboard in Resources */,
 				1393F4A21F5EF56A005A78ED /* Assets.xcassets in Resources */,
-				1393F4A01F5EF56A005A78ED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1393F49D1F5EF56A005A78ED /* ViewController.swift in Sources */,
+				138F97901F5F228E00918A6B /* FlagViewController.swift in Sources */,
 				1393F49B1F5EF56A005A78ED /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,6 +345,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HX4EQ4XJD2;
 				INFOPLIST_FILE = MetaHobby_flags/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "MetaHobby.MetaHobby-flags";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -358,6 +359,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HX4EQ4XJD2;
 				INFOPLIST_FILE = MetaHobby_flags/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "MetaHobby.MetaHobby-flags";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -414,6 +416,7 @@
 				1393F4B61F5EF56A005A78ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1393F4B71F5EF56A005A78ED /* Build configuration list for PBXNativeTarget "MetaHobby_flagsTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +425,7 @@
 				1393F4B91F5EF56A005A78ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
