@@ -34,7 +34,8 @@ class FlagViewController: UIViewController {
         //UIColor(red: 1.0, green: 0.6, blue: 0.2, alpha: 1.0).cgColor
         
         //Changed the countries to have capitilzation here, then lowercase in the image name
-        countries += ["Estonia", "France", "Germany", "Ireland", "Italy",
+        //To add an imageset, make sure you have file.png file@2x.png and file@3x.png
+        countries += ["Sweden", "France", "Germany", "Ireland", "Italy", "Estonia",
                       "Monaco", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"]
         
         askQuestion() //Ask the first questions and we're off!
