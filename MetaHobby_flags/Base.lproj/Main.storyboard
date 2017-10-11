@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="W4O-8V-289">
-    <device id="retina4_7" orientation="landscape">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,11 +18,11 @@
                         <viewControllerLayoutGuide type="bottom" id="mkV-6e-0cm"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7r2-SD-BWz">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="aRG-Y7-YJE">
-                                <rect key="frame" x="13.5" y="137.5" width="640" height="100"/>
+                                <rect key="frame" x="87.5" y="163.5" width="200" height="340"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMt-gt-C9o">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
@@ -35,7 +35,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjo-ii-bIS">
-                                        <rect key="frame" x="220" y="0.0" width="200" height="100"/>
+                                        <rect key="frame" x="0.0" y="120" width="200" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="ht8-Dp-Jha"/>
                                         </constraints>
@@ -45,7 +45,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QL2-Zd-7OS">
-                                        <rect key="frame" x="440" y="0.0" width="200" height="100"/>
+                                        <rect key="frame" x="0.0" y="240" width="200" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="wfN-m7-iaz"/>
                                         </constraints>

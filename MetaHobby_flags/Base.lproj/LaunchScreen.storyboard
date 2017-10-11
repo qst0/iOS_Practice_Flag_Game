@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,20 +18,48 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOADING . . ." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJc-VP-zKy">
-                                <rect key="frame" x="137.5" y="323" width="100" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="XcR-TO-yif">
+                                <rect key="frame" x="13.5" y="137" width="640" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2U-bF-ZfD">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="tk6-wa-dD9"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="germany"/>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="069-LZ-eDk">
+                                        <rect key="frame" x="220" y="0.0" width="200" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="vvU-yx-WD0"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="france"/>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOz-qu-G9z">
+                                        <rect key="frame" x="440" y="0.0" width="200" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="YuA-Jm-ebX"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="sweden"/>
+                                    </button>
+                                </subviews>
+                                <variation key="heightClass=compact" axis="horizontal"/>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LOADING . . ." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJc-VP-zKy">
+                                <rect key="frame" x="91" y="88" width="196.5" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wJc-VP-zKy" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="GHe-Yb-nZw"/>
-                            <constraint firstItem="wJc-VP-zKy" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="xfA-br-vt0"/>
+                            <constraint firstItem="XcR-TO-yif" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="117" id="3g8-1a-RGs"/>
+                            <constraint firstItem="XcR-TO-yif" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Kjk-Fu-Cnk"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -40,4 +68,9 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="france" width="200" height="100"/>
+        <image name="germany" width="200" height="100"/>
+        <image name="sweden" width="200" height="100"/>
+    </resources>
 </document>
